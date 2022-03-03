@@ -1,24 +1,35 @@
-# README
+# Current Weather Feature:
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## For this story, I will be using the OpenWeatherMap API.
 
-Things you may want to cover:
+As a user
+- When I visit "/"
+- And I click on a destination
+- Then I should be on page "/destinations/:id"
+- Then I should see the destination's name, zipcode, description, and current weather
+- The weather forecast is specific to the destination whose page I'm on
+- The forecast should include date (weekday, month and day), current, high and low temps in Fahrenheit, and a summary (for example "light rain", "clear sky", etc.)
 
-* Ruby version
+# Weather Image Implementation
+For this story, I will using the Giphy API.
 
-* System dependencies
+As a user
+- When I visit "/"
+- And I click on a destination
+- Then I should be on page "/destinations/:id"
+- Then I should see an image related to the current weather at the destination
 
-* Configuration
+# Create an External API for the Destination resource
 
-* Database creation
+- RESTful routes should be created to index, show, create, update, and destroy destinations.
+- Routes should render JSON or an HTTP status code depending on their purpose.
+- These routes should be namespaced under /api/v1/.
+- Request specs should be driving the creation of these routes.
+- Make sure create, update, and destroy work through Postman
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+# Create External API endpoints for Destination Weather
+- Expose the information from challenges 1 and 2 in an api endpoint, including destination weather and a related image
+- Routes should render JSON or an HTTP status code depending on their purpose.
+- You have some freedom to determine what the JSON response looks like.
+- These routes should be namespaced under /api/v1/.
+- Request specs should be driving the creation of these routes.
